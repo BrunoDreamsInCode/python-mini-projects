@@ -1,51 +1,87 @@
-# Blackjack Game
+========================================
+BLACKJACK GAME – VERSIONS 1 & 2
+========================================
 
-> Exercise from my current Python course. (https://www.udemy.com/course/100-days-of-code/)
+This repository contains two versions of a simple Blackjack game
+developed in Python as part of my learning journey.
 
-Python exercise focused on learning:
+Both versions were implemented independently, and the second
+version is an improved and optimized rewrite based on reflection
+and understanding of the rules and logic.
 
-- input() and user interaction
-- Using lists to store cards
-- Conditional statements (if/else) to check game outcomes
-- while loops to control game flow
-- Functions to organize code and reuse logic
-- Random module to simulate drawing cards
+----------------------------------------
+VERSION 1
+----------------------------------------
 
-## Description
-
-This program simulates a simple Blackjack game between a player and the computer (dealer):
-
-- Player and dealer are dealt cards
+- First implementation of the Blackjack game
+- Focused on basic game logic and player interaction
+- Player and dealer receive cards
 - Player can choose to draw more cards or pass
-- Ace can count as 11 or 1 automatically to avoid bust
-- Dealer draws cards automatically until reaching 17 or higher
-- The program checks for Blackjack, busts, and declares a winner
+- Aces automatically adjusted to prevent bust
+- Dealer draws automatically until reaching 17
+- Includes messages and emojis for user experience
 
-### Example interaction:
+Learning Goals Achieved:
+- Using lists to store and manipulate game data
+- Conditional statements for game outcomes
+- Loops to control repeated actions
+- Functions for modular code
+- Randomization and input handling
 
-Do you want to play a game of Blackjack? Type 'y' or 'n': y  
+----------------------------------------
+VERSION 2
+----------------------------------------
 
-Your cards: [2, 10], current score: 12  
-Computer's first card: 11  
+- Fully rewritten and optimized version after reflecting on 
+  the instructor's solution
+- Improved readability and user experience
+- Calculates scores more efficiently and handles multiple Aces
+- Natural Blackjack now clearly displayed as 21 instead of 0
+- Player and dealer turns flow more logically
+- Final results clearly displayed with fun messages
+- Better modularity and code structure
 
-Type 'y' to get another card, type 'n' to pass: y  
+Learning Goals Achieved:
+- Enhanced modular code with functions
+- Accurate implementation of Blackjack rules
+- Edge case handling (Blackjack, multiple Aces, busts)
+- Clearer and more user-friendly display
+- Demonstrates independent problem-solving and code improvement
 
-Your final hand: [2, 10, 3], final score: 15  
-Computer's final hand: [11, 6], final score: 17  
+----------------------------------------
+EXAMPLE INTERACTION (V2)
+----------------------------------------
 
-💀 YOU LOSE!
+Do you want to play a game of Blackjack? Type 'y' or 'n': y
 
-Each run can have different cards and outcomes.
+Your cards: [11, 10], current score: 21
+Computer's first card: 9
 
-### Learning Goal
+Your final hand: [11, 10], final score: 21
+Computer's final hand: [9, 8, 10], final score: 27
 
-- Practice using lists to store and manipulate game data
-- Learn to implement game logic with conditionals
-- Understand loops for repeated player actions
-- Learn to use functions for modular code
-- Combine randomization, logic, and user input to build an interactive game
+😎 Win with a Blackjack!
 
-## How to Run
-````
-python blackjack_game.py
-````
+----------------------------------------
+HOW TO RUN
+----------------------------------------
+````bash
+Run V1:
+python v1_blackjack_game.py
+
+Run V2:
+python v2_blackjack_game.py
+```` 
+----------------------------------------
+DIFFERENCES & IMPROVEMENTS (V2 vs V1)
+----------------------------------------
+
+- Cleaner and more readable code
+- Better handling of multiple Aces
+- Shows natural Blackjack as 21 instead of 0
+- Improved messages and final output
+- Optimized loops and function usage
+- Clear separation of player and dealer turns
+- More structured and modular for portfolio presentation
+
+========================================
