@@ -20,4 +20,4 @@ def is_prime(num):
     return True  # Any divisors found → prime number
 
 # Example usage, it Will return True for prime, False if is not prime.
-print(is_prime(73))
+print(is_prime(73))#You need to put here the number to check it

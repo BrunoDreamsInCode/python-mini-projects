@@ -59,7 +59,9 @@ Learning Goals
 
 How to Run
 ----------
-
+```bash
 python prime_checker.py
+```
 
 > Make sure your prime_checker.py contains the is_prime(num) function.
+
