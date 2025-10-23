@@ -1,28 +1,33 @@
 from turtle import Turtle
+ALIGNMENT = "center"
+FONT = ("Courier", 22, "normal")
 
-class Score(Turtle):
+class Scoreboard(Turtle):
 
     def __init__(self):
         super().__init__()
-        # Initialize score level
-        self.level = 0
-        self.penup()            # Prevent drawing lines while moving
-        self.hideturtle()       # Hide the turtle shape (only text will be shown)
-        self.color("white")     # Set text color
-        self.goto(0, 280)       # Position the score text at the top of the screen
-        self.display_text()     # Display the initial score
+        self.score = 0
+        with open("data.txt") as data:
+            self.high_score = int(data.read())
+        self.color("white")
+        self.penup()
+        self.goto(0, 270)
+        self.hideturtle()
+        self.update_scoreboard()
 
-    def display_text(self):
-        # Clear the previous score and display the updated value
+    def update_scoreboard(self):
         self.clear()
-        self.write(f"Score: {self.level}", False, align="center", font=("Arial", 15, "normal"))
+        self.write(f"Score: {self.score} | Highest Score: {self.high_score}", align=ALIGNMENT, font=FONT)
 
-    def game_over(self):
-        # Display the final "Game Over" message in the center of the screen
-        self.goto(0, 0)
-        self.write(f"GAME OVER: {self.level}", False, align="center", font=("Arial", 15, "normal"))
+    def reset(self):
+        if self.score > self.high_score:
+            self.high_score = self.score
+            with open("data.txt", mode="w") as data:
+                data.write(f"{self.high_score}")
+        self.score = 0
+        self.update_scoreboard()
 
-    def level_up_score(self):
-        # Increase the score by 1 and refresh the display
-        self.level += 1
-        self.display_text()
+    def increase_score(self):
+        self.score += 1
+        self.clear()
+        self.update_scoreboard()
