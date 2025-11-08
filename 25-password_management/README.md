@@ -1,49 +1,81 @@
 # Password Manager 🔒
 
-A simple Python application to generate and save secure passwords for websites. Users can generate strong passwords, automatically copy them to the clipboard, and save them along with their email and website details in a local text file.
+A modernized Python application for generating, saving, and searching
+secure passwords --- now using JSON storage and a search feature with
+validation and case-insensitive lookup.
 
-## Features
+Built with **Tkinter** for the GUI and **Pyperclip** for clipboard
+management.
 
-- Generate random passwords with letters, numbers, and symbols.
-- Password is automatically copied to the clipboard for convenience.
-- Save website, email/username, and password to a local `Passwords.txt` file.
-- Simple and clean GUI using Tkinter.
-- Built-in validation to prevent saving empty fields.
-- Confirmation message before saving credentials.
+------------------------------------------------------------------------
 
-## Screenshot
-![img_1.png](img_1.png)
+## 🚀 Features
 
-## How to Run
+-   **Generate strong passwords** with random letters, numbers, and
+    symbols.\
+-   **Copy automatically** the generated password to clipboard.\
+-   **Save credentials** (website, e-mail, and password) locally in a
+    `password.json` file.\
+-   **Search saved accounts** easily with a case-insensitive and
+    space-tolerant search.\
+-   **Field validation** to prevent saving or searching empty inputs.\
+-   **Clean and minimal Tkinter interface**.
 
-1. Make sure Python is installed.
-2. Install required modules if not already installed:
+------------------------------------------------------------------------
 
-```bash
+## 🧩 How It Works
+
+1.  **Generate a password** using the "Generate Password" button.\
+2.  The password will automatically be copied to your clipboard.\
+3.  Enter the website and e-mail/username.\
+4.  Click **Add** to save your credentials locally in `password.json`.\
+5.  Use the **Search** button to quickly find previously saved logins
+    (not case-sensitive).
+
+------------------------------------------------------------------------
+
+## 📦 Requirements
+
+-   Python 3.10+\
+-   Required modules:
+
+``` bash
 pip install pyperclip
 ```
 
-3. Run the script:
+------------------------------------------------------------------------
 
-```bash
+## ▶️ How to Run
+
+1.  Make sure you have Python installed.\
+2.  Place all files (`main.py`, `logo.png`, etc.) in the same
+    directory.\
+3.  Run the script:
+
+``` bash
 python main.py
 ```
 
-4. Enter website, email/username, and generate a password.  
-5. Click **Add** to save credentials to `Passwords.txt`.
+------------------------------------------------------------------------
 
-## How it Works
+## 🧠 Skills Practiced
 
-- The user enters the website and email/username.
-- Clicking **Generate Password** creates a random password containing letters, numbers, and symbols. It is automatically copied to the clipboard.
-- Clicking **Add** shows a confirmation message with the entered details.
-- If confirmed, the details are saved in `Passwords.txt` and the website and password fields are cleared for the next entry.
+-   Python fundamentals and list comprehensions\
+-   JSON file handling and exception management\
+-   GUI development with Tkinter\
+-   Clipboard manipulation using Pyperclip\
+-   Data validation and user feedback with message boxes
 
-## Skills Practiced
+------------------------------------------------------------------------
 
-- Python basics and loops
-- Working with lists and randomization
-- File handling (saving to `.txt`)
-- GUI development with Tkinter
-- Clipboard manipulation using `pyperclip`
-- User input validation and message boxes
+## 🖼️ Screenshot – Saving a New Account
+![img_3.png](img_3.png)
+
+
+## 🖼️ Screenshot – Searching for a Saved Account
+![img_4.png](img_4.png)
+
+------------------------------------------------------------------------
+
+> 💡 This project is part of a learning path for improving Python GUI
+> and file handling skills.
