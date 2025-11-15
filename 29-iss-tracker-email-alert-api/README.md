@@ -13,6 +13,9 @@ A Python script that checks the real-time position of the International Space St
 - Loops every 60 seconds  
 - Simple and beginner-friendly Python example of APIs + email + automation
 
+## How the email is received
+Below is an example of the notification email you will receive when the ISS is passing near your location at night:
+![img.png](img.png)
 ## Commands
 The script runs automatically and continuously checks for:
 - ISS proximity  

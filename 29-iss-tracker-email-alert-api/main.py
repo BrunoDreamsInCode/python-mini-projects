@@ -58,14 +58,14 @@ while True:
             connection.login(user=my_email, password=my_password)
             connection.sendmail(
                 from_addr=my_email,
-                to_addrs="bruno.dreams.in.code@gmail.com",
+                to_addrs="recipient_email_here@example.com",
                 msg=(
-                    "Subject:Look at Sky🌃!\n\n"
+                    "Subject:Look at Sky!\n\n"
                     "The International Space Station is passing near your location right now!\n"
                     "Look up at the sky and enjoy the view!"
                 )
             )
 
     run_time += 1
-    print(f"This application runs every 60s\nRun times: {run_time}")
+    print(f"This application runs every 60s\nRun times: {run_time}\n")
     time.sleep(60)
