@@ -16,16 +16,15 @@ The score updates dynamically, and the interface provides visual feedback after 
 - Auto‑advance to the next question  
 - Graceful end‑of‑quiz handling  
 
-## ScreenShots
-* Program
-![img_1.png](img_1.png)
+## Screenshots
+### Program
+<img src="img_1.png" width="350">
 
-* Program visual feedback (When `Right` or `Wrong`)
-![img_2.png](img_2.png)
+### Feedback (Correct/Wrong)
+<img src="img_2.png" width="350">
 
-* Program when you reached the end of the quizz
-![img_3.png](img_3.png)
-
+### End of Quiz
+<img src="img_3.png" width="350">
 
 ## Learning Goals
 
