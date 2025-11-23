@@ -15,7 +15,8 @@ A Python script that checks the real-time position of the International Space St
 
 ## How the email is received
 Below is an example of the notification email you will receive when the ISS is passing near your location at night:
-![img.png](img.png)
+<img width="1653" height="327" alt="img" src="https://github.com/user-attachments/assets/4840f27f-5976-4dfb-bf85-7bd23a313391" />
+
 ## Commands
 The script runs automatically and continuously checks for:
 - ISS proximity  
