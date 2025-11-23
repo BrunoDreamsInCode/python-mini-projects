@@ -28,7 +28,9 @@ Ideal for learning automation, APIs, and email handling in Python.
 ```{=html}
 <!-- Add screenshot if available -->
 ```
-![email_example](img_1.png)
+<img width="1919" height="582" alt="img_1" src="https://github.com/user-attachments/assets/f97018a7-9598-45e7-999d-f854277aaaab" />
+
+
 
 ------------------------------------------------------------------------
 
