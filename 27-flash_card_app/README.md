@@ -54,7 +54,7 @@ pip install pandas
 ```
 
 ## Screenshot
-![img_1.png](img_1.png)
+<img width="1691" height="685" alt="img_1" src="https://github.com/user-attachments/assets/f8aa0580-c06b-4586-88ae-8c9ad6a42926" />
 
 ## License
 This project is free to use and modify for learning purposes.
