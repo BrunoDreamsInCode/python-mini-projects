@@ -16,8 +16,8 @@ It can be hosted on platforms like PythonAnywhere to run automatically.
 
 ## Screenshots
 ### Example Email Alert
-<!-- Add screenshot of email -->
-![img_1.png](img_1.png)
+<img width="1917" height="303" alt="img_1" src="https://github.com/user-attachments/assets/56c26bdf-2c4f-4a45-ab1e-adc8b63974d5" />
+
 
 ## Learning Goals
 
